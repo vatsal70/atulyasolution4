@@ -1,0 +1,13 @@
+name: Website Hit Scheduler
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+
+jobs:
+  hit-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send HTTP request to website
+        run: |
+          curl -X GET https://vatsal.atulyasolutions.in/
