@@ -30,6 +30,34 @@
 }
 
 
+/***To create a typing effect on homepage ***/
+.txt-rotate {
+    display: inline-block;
+}
+
+.txt-rotate > .wrap {
+    border-right: 0.08em solid #666; /* Optional, for cursor effect */
+    white-space: nowrap; /* Keeps text from wrapping */
+}
+
+
+/* Center the last item when not filling the entire row */
+/* Flexbox layout for the container */
+/* .portfolio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 32%;
+    margin-bottom: 30px;
+}
+
+.portfolio-item:nth-last-child(1):nth-child(3n+1) {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 /*** Heading ***/
 h1,
 h2,
@@ -211,7 +239,7 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 18rem 0;
+    padding: 12rem 0;
     background:
         url(../img/blob-top-left.png),
         url(../img/blob-top-right.png),
